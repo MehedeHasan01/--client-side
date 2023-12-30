@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    color: #542CC0;
+}
+.hiddenDrop:hover {
+    .showDrop{
+        display: block;
+        transition:  0.5s;
+    };
+    .dropIcon{
+        transform: rotate(-180deg);
+        transition:  0.5s;
+    }
+}
+.dropIcon{
+    transition:  0.5s;
+}
+
+
+.testimonialImageStyle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #F4F7FD;
+}
+
+.testimonialImageStyle img {
+    height: 130%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.circ {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
