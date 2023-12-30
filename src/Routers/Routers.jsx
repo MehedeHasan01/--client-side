@@ -7,6 +7,7 @@ import Account from "../Pages/Account/Account";
 import MyRegistations from "../Pages/MyRegistations/MyRegistations";
 import MyRegistationDetails from "../Pages/myRegistationDetails/myRegistationDetails";
 import ErrorMessage from "../Pages/ErrorMessage/ErrorMessage";
+import Registration from "../Pages/Registration/Registration";
 
 
 
@@ -39,8 +40,13 @@ const Routers = createBrowserRouter([
             //     element: <MyRegistations/>,
             //     loader: ({params})=> fetch(`http://localhost:5000/registations/${params.email}`)
             // },
+
             {
-                path:'/registations',
+                path:'/registration',
+                element: <Registration/>
+            },
+            {
+                path:'/myRegistations',
                 element: <MyRegistations/>,
                 loader: ()=> fetch(`http://localhost:5000/registations`)
             },

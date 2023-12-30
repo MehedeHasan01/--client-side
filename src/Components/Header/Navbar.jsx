@@ -117,10 +117,15 @@ const Navbar = () => {
                 <NavLink className={'hover:text-[#6d28d9]'}  to={'/about'}>নিণীষ সম্পর্কে</NavLink>
                 <hr className="my-2 lg:hidden"/>
             </li>
+
+            <li>
+                <NavLink className={'hover:text-[#6d28d9]'}  to={'/registration'}>রেজিস্ট্রেশন</NavLink>
+                <hr className="my-2 lg:hidden"/>
+            </li>
             {
                 user?.email &&
             <li>
-                <NavLink className={'hover:text-[#6d28d9]'}  to={`/registations`}>আমার রেজিস্ট্রেশন</NavLink>
+                <NavLink className={'hover:text-[#6d28d9]'}  to={`/myRegistations`}>আমার রেজিস্ট্রেশন</NavLink>
                 <hr className="my-2 lg:hidden"/>
             </li>
 
